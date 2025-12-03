@@ -138,6 +138,247 @@
       <div class="col-lg-12">
          <div class="card">
             <div class="card-header">
+               <h2>Bash / Shell Scripting</h2>
+            </div>
+            <div class="card-body">
+               <div class="card-text">
+                  <p>With over a decade of hands-on experience in Unix/Linux environments, I have developed advanced proficiency in <strong>Bash and shell scripting</strong> to automate workflows, streamline DevOps pipelines, and solve complex system administration challenges. My scripting expertise has been applied across CI/CD automation, deployment orchestration, data processing, and infrastructure management for large-scale web applications.</p>
+                  <h4 id="-key-areas-of-expertise-"><strong>Key Areas of Expertise:</strong></h4>
+                  <ul>
+                     <li>
+                        <p><strong>Automation &amp; DevOps:</strong></p>
+                        <ul>
+                           <li>Authored hundreds of Bash scripts to automate repetitive tasks such as database backups, log rotation, file synchronization, and environment provisioning.</li>
+                           <li>Integrated shell scripts into <strong>Jenkins pipelines</strong>, <strong>GitHub Actions</strong>, <strong>Acquia Pipelines</strong>, and <strong>GitLab CI</strong> for streamlined build, test, and deployment processes.</li>
+                           <li>Created deployment scripts for <strong>Drupal</strong>, <strong>WordPress</strong>, and <strong>Node.js</strong> applications that handle code deployment, configuration imports, cache clearing, and health checks.</li>
+                           <li>Developed rollback mechanisms and error-handling logic to ensure safe deployments with automatic reversion on failure.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>System Administration &amp; Maintenance:</strong></p>
+                        <ul>
+                           <li>Automated server setup and configuration using shell scripts for <strong>Ubuntu</strong>, <strong>CentOS</strong>, and <strong>Amazon Linux</strong> environments.</li>
+                           <li>Built monitoring scripts that check disk usage, memory consumption, service health, and uptime, triggering alerts via email, Slack, or PagerDuty.</li>
+                           <li>Scheduled scripts with <strong>cron jobs</strong> for periodic maintenance tasks, including log archival, SSL certificate renewal checks, and database optimization.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Data Processing &amp; ETL:</strong></p>
+                        <ul>
+                           <li>Used shell scripts with tools like <code>awk</code>, <code>sed</code>, <code>grep</code>, <code>cut</code>, and <code>jq</code> to parse, transform, and filter large datasets (logs, CSVs, JSON).</li>
+                           <li>Created ETL pipelines for migrating and transforming data between legacy systems and modern cloud platforms.</li>
+                           <li>Automated report generation from raw logs, including traffic analysis, error rates, and performance metrics.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Git &amp; Version Control Automation:</strong></p>
+                        <ul>
+                           <li>Developed pre-commit and post-merge hooks to enforce code quality standards, run linters, and validate configuration files.</li>
+                           <li>Scripted bulk repository operations such as batch cloning, tagging, branching, and merging across multiple projects.</li>
+                           <li>Automated changelog generation and semantic versioning using Git history parsing.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Docker &amp; Container Management:</strong></p>
+                        <ul>
+                           <li>Wrote shell scripts to orchestrate Docker container builds, tagging, pushing to registries, and container cleanup.</li>
+                           <li>Created wrapper scripts for <strong>docker-compose</strong> to simplify multi-container application management and environment setup.</li>
+                           <li>Integrated Bash scripts with <strong>Lando</strong> and <strong>Docksal</strong> for custom initialization and teardown workflows.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>API Automation &amp; Integration:</strong></p>
+                        <ul>
+                           <li>Used <code>curl</code> and <code>wget</code> in Bash scripts to interact with REST APIs for deployment triggers, status checks, and data retrieval.</li>
+                           <li>Integrated with <strong>Acquia Cloud API</strong>, <strong>GitHub API</strong>, <strong>AWS CLI</strong>, and <strong>Slack webhooks</strong> for automated workflows.</li>
+                           <li>Parsed JSON responses with <code>jq</code> and implemented retry logic, authentication handling, and error reporting.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Security &amp; Permissions Management:</strong></p>
+                        <ul>
+                           <li>Automated SSH key management, file permission corrections, and secure credential handling using environment variables and encrypted vaults.</li>
+                           <li>Implemented script-based audits to detect insecure file permissions, exposed secrets, and misconfigured services.</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <h4 id="-tools-techniques-"><strong>Tools &amp; Techniques:</strong></h4>
+                  <ul>
+                     <li><strong>Core Utilities:</strong> <code>bash</code>, <code>zsh</code>, <code>sh</code>, <code>awk</code>, <code>sed</code>, <code>grep</code>, <code>find</code>, <code>xargs</code>, <code>rsync</code>, <code>tar</code>, <code>curl</code>, <code>wget</code></li>
+                     <li><strong>JSON/YAML Parsing:</strong> <code>jq</code>, <code>yq</code></li>
+                     <li><strong>Process &amp; Performance Monitoring:</strong> <code>ps</code>, <code>top</code>, <code>htop</code>, <code>df</code>, <code>du</code>, <code>netstat</code>, <code>lsof</code></li>
+                     <li><strong>Scheduling:</strong> <code>cron</code>, <code>at</code>, systemd timers</li>
+                     <li><strong>Version Control Hooks:</strong> Git pre-commit, post-receive, post-merge</li>
+                     <li><strong>CI/CD Integration:</strong> Jenkins, GitHub Actions, GitLab CI, Acquia Pipelines</li>
+                  </ul>
+                  <h4 id="-sample-projects-"><strong>Sample Projects:</strong></h4>
+                  <ul>
+                     <li><strong>Automated Drupal Deployment Script:</strong> Created a comprehensive deployment script handling Git pulls, Composer installs, configuration imports (<code>drush cim</code>), database updates (<code>drush updb</code>), and cache rebuilds (<code>drush cr</code>) with rollback support.</li>
+                     <li><strong>Multisite Environment Sync Tool:</strong> Built a script to synchronize databases and files across multiple Drupal multisites in development, staging, and production environments.</li>
+                     <li><strong>Log Analysis &amp; Alert System:</strong> Developed a Bash-based log parser that detects error patterns in Apache/Nginx logs and sends real-time alerts via Slack webhooks.</li>
+                     <li><strong>Docker Environment Bootstrapper:</strong> Wrote an initialization script for spinning up local Docker development environments with custom hosts, SSL certificates, and database imports.</li>
+                  </ul>
+                  <h4 id="-achievements-"><strong>Achievements:</strong></h4>
+                  <ul>
+                     <li>Reduced manual deployment time by <strong>90%</strong> through fully automated shell-based CI/CD workflows.</li>
+                     <li>Eliminated configuration drift across environments by scripting repeatable setup and validation processes.</li>
+                     <li>Improved system reliability with proactive monitoring scripts that catch issues before they impact users.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row mb-3">
+      <div class="col-lg-12">
+         <div class="card">
+            <div class="card-header">
+               <h2>System Administration / DevOps / Linux Administration</h2>
+            </div>
+            <div class="card-body">
+               <div class="card-text">
+                  <p>With over 15 years of hands-on experience in Linux system administration and DevOps engineering, I have managed, optimized, and secured production infrastructure serving millions of users. My expertise spans <strong>server provisioning</strong>, <strong>performance tuning</strong>, <strong>automation</strong>, <strong>monitoring</strong>, and <strong>incident response</strong> across diverse environments including bare-metal servers, virtual machines, and cloud platforms (AWS, Azure, Google Cloud).</p>
+                  <h4 id="-key-areas-of-expertise-"><strong>Key Areas of Expertise:</strong></h4>
+                  <ul>
+                     <li>
+                        <p><strong>Linux Server Administration:</strong></p>
+                        <ul>
+                           <li>Extensive experience managing <strong>Ubuntu</strong>, <strong>CentOS</strong>, <strong>RHEL</strong>, <strong>Debian</strong>, and <strong>Amazon Linux</strong> distributions in production environments.</li>
+                           <li>Configured and maintained critical services including <strong>Apache</strong>, <strong>Nginx</strong>, <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>PHP-FPM</strong>, <strong>Redis</strong>, <strong>Memcached</strong>, <strong>Varnish</strong>, and <strong>Solr</strong>.</li>
+                           <li>Performed regular kernel updates, security patching, and system hardening following CIS benchmarks and security best practices.</li>
+                           <li>Managed user accounts, SSH access, sudo permissions, and group policies for multi-team environments.</li>
+                           <li>Implemented file system management including LVM, disk partitioning, RAID configurations, and NFS/CIFS mounts.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Infrastructure as Code (IaC):</strong></p>
+                        <ul>
+                           <li>Automated infrastructure provisioning using <strong>Terraform</strong>, <strong>Ansible</strong>, <strong>CloudFormation</strong>, and <strong>Puppet</strong>.</li>
+                           <li>Created reusable Ansible playbooks for server configuration, application deployment, and environment consistency across dev, staging, and production.</li>
+                           <li>Managed infrastructure state with version control (Git) and implemented GitOps workflows for infrastructure changes.</li>
+                           <li>Developed Terraform modules for AWS resources (EC2, RDS, VPC, S3, IAM) with remote state management using S3 and DynamoDB.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Web Server & Application Stack Management:</strong></p>
+                        <ul>
+                           <li>Configured and optimized <strong>LAMP</strong> (Linux, Apache, MySQL, PHP) and <strong>LEMP</strong> (Linux, Nginx, MySQL, PHP) stacks for high-traffic Drupal and WordPress sites.</li>
+                           <li>Implemented reverse proxy configurations with Nginx for load balancing, SSL termination, and caching.</li>
+                           <li>Tuned PHP-FPM worker pools, OPcache, and memory limits to optimize application performance.</li>
+                           <li>Configured Varnish cache for HTTP acceleration, reducing server load by 60-80%.</li>
+                           <li>Set up and maintained Solr/Elasticsearch clusters for enterprise search functionality.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Database Administration:</strong></p>
+                        <ul>
+                           <li>Administered <strong>MySQL</strong> and <strong>PostgreSQL</strong> databases including installation, configuration, replication, and backup strategies.</li>
+                           <li>Optimized database performance through query analysis, index optimization, and schema design improvements.</li>
+                           <li>Implemented automated backup solutions with mysqldump, pg_dump, and incremental backup strategies.</li>
+                           <li>Configured master-slave replication and read replicas for high availability and load distribution.</li>
+                           <li>Performed database migrations, upgrades, and disaster recovery procedures.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Performance Tuning & Optimization:</strong></p>
+                        <ul>
+                           <li>Analyzed and resolved performance bottlenecks using tools like <code>top</code>, <code>htop</code>, <code>iotop</code>, <code>vmstat</code>, <code>iostat</code>, and <code>strace</code>.</li>
+                           <li>Optimized system resources including CPU scheduling, memory allocation, disk I/O, and network throughput.</li>
+                           <li>Tuned kernel parameters (<code>sysctl</code>) for network performance, file descriptors, and connection handling.</li>
+                           <li>Implemented caching strategies at multiple layers (Varnish, Redis, OPcache, CDN) to reduce response times.</li>
+                           <li>Conducted load testing using <strong>Apache Bench</strong>, <strong>JMeter</strong>, and <strong>K6</strong> to validate infrastructure scalability.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Security & Hardening:</strong></p>
+                        <ul>
+                           <li>Implemented security best practices including <strong>fail2ban</strong>, <strong>iptables</strong>/<strong>firewalld</strong> rules, and <strong>SELinux</strong>/<strong>AppArmor</strong> policies.</li>
+                           <li>Configured intrusion detection systems (<strong>OSSEC</strong>, <strong>Snort</strong>) and log monitoring for suspicious activity.</li>
+                           <li>Managed SSL/TLS certificates using <strong>Let's Encrypt</strong>, <strong>Certbot</strong>, and commercial CAs with automated renewal.</li>
+                           <li>Conducted regular security audits using <strong>Lynis</strong>, <strong>OpenVAS</strong>, and <strong>Nessus</strong>.</li>
+                           <li>Implemented two-factor authentication (2FA) for SSH access and privileged accounts.</li>
+                           <li>Configured centralized logging with <strong>rsyslog</strong> and <strong>ELK Stack</strong> for compliance and forensics.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Monitoring & Alerting:</strong></p>
+                        <ul>
+                           <li>Deployed comprehensive monitoring solutions using <strong>Nagios</strong>, <strong>Zabbix</strong>, <strong>Prometheus</strong>, <strong>Grafana</strong>, and <strong>Datadog</strong>.</li>
+                           <li>Created custom monitoring scripts and health checks for application-specific metrics.</li>
+                           <li>Configured alerting workflows via <strong>PagerDuty</strong>, <strong>Slack</strong>, <strong>email</strong>, and <strong>SMS</strong> for critical incidents.</li>
+                           <li>Built real-time dashboards visualizing CPU, memory, disk, network, application performance, and business metrics.</li>
+                           <li>Implemented log aggregation and analysis with <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana) and <strong>Splunk</strong>.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Backup & Disaster Recovery:</strong></p>
+                        <ul>
+                           <li>Designed and implemented comprehensive backup strategies including full, incremental, and differential backups.</li>
+                           <li>Automated backup routines using <code>rsync</code>, <code>tar</code>, <code>mysqldump</code>, and cloud-native solutions (AWS Backup, Azure Backup).</li>
+                           <li>Tested disaster recovery procedures regularly to ensure RTO (Recovery Time Objective) and RPO (Recovery Point Objective) compliance.</li>
+                           <li>Configured off-site backup storage with encryption for data protection and regulatory compliance.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Containerization & Orchestration:</strong></p>
+                        <ul>
+                           <li>Deployed and managed <strong>Docker</strong> containers in production environments with multi-stage builds and layer optimization.</li>
+                           <li>Orchestrated containerized applications using <strong>Kubernetes</strong>, <strong>Docker Swarm</strong>, and <strong>AWS ECS</strong>.</li>
+                           <li>Implemented CI/CD pipelines with container image building, scanning, and automated deployments.</li>
+                           <li>Managed Kubernetes clusters including pod scheduling, resource limits, auto-scaling, and ingress controllers.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Networking & Load Balancing:</strong></p>
+                        <ul>
+                           <li>Configured network interfaces, routing tables, VLANs, and VPN tunnels (<strong>OpenVPN</strong>, <strong>WireGuard</strong>).</li>
+                           <li>Implemented load balancing using <strong>HAProxy</strong>, <strong>Nginx</strong>, <strong>AWS ELB/ALB</strong>, and <strong>F5 Big-IP</strong>.</li>
+                           <li>Managed DNS records and configurations for high-availability setups with <strong>BIND</strong>, <strong>Route 53</strong>, and <strong>Cloudflare</strong>.</li>
+                           <li>Diagnosed and resolved network issues using <code>tcpdump</code>, <code>netstat</code>, <code>traceroute</code>, <code>dig</code>, and <code>nslookup</code>.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Incident Response & Troubleshooting:</strong></p>
+                        <ul>
+                           <li>Led incident response for production outages, performance degradations, and security breaches.</li>
+                           <li>Conducted root cause analysis (RCA) and implemented corrective actions to prevent recurrence.</li>
+                           <li>Maintained on-call rotation and responded to critical alerts 24/7 for high-availability systems.</li>
+                           <li>Documented incident timelines, resolutions, and post-mortems for continuous improvement.</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <h4 id="-tools-technologies-"><strong>Tools &amp; Technologies:</strong></h4>
+                  <ul>
+                     <li><strong>Operating Systems:</strong> Ubuntu, CentOS, RHEL, Debian, Amazon Linux, Alpine Linux</li>
+                     <li><strong>Web Servers:</strong> Apache, Nginx, Varnish, HAProxy</li>
+                     <li><strong>Databases:</strong> MySQL, PostgreSQL, MariaDB, MongoDB, Redis, Memcached</li>
+                     <li><strong>Automation:</strong> Ansible, Terraform, Puppet, Chef, CloudFormation</li>
+                     <li><strong>Containers:</strong> Docker, Kubernetes, Docker Compose, Podman, ECS, EKS</li>
+                     <li><strong>Monitoring:</strong> Nagios, Zabbix, Prometheus, Grafana, Datadog, New Relic, CloudWatch</li>
+                     <li><strong>Logging:</strong> ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, rsyslog, journalctl</li>
+                     <li><strong>Security:</strong> fail2ban, iptables, firewalld, SELinux, AppArmor, Let's Encrypt, Certbot</li>
+                     <li><strong>Version Control:</strong> Git, GitLab, GitHub, Bitbucket</li>
+                     <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI, Travis CI, CircleCI</li>
+                     <li><strong>Cloud Platforms:</strong> AWS (EC2, RDS, S3, CloudWatch, Lambda), Azure, Google Cloud</li>
+                     <li><strong>Networking:</strong> OpenVPN, WireGuard, BIND, iptables, tcpdump, Wireshark</li>
+                  </ul>
+                  <h4 id="-achievements-"><strong>Achievements:</strong></h4>
+                  <ul>
+                     <li>Reduced infrastructure costs by <strong>40%</strong> through rightsizing instances, implementing auto-scaling, and optimizing resource allocation.</li>
+                     <li>Achieved <strong>99.99% uptime</strong> for mission-critical applications through proactive monitoring, redundancy, and disaster recovery planning.</li>
+                     <li>Decreased deployment time from <strong>hours to minutes</strong> by implementing fully automated CI/CD pipelines with infrastructure as code.</li>
+                     <li>Improved application performance by <strong>300%</strong> through database optimization, caching layers, and load balancing strategies.</li>
+                     <li>Successfully migrated <strong>50+ servers</strong> from on-premises to AWS cloud with zero downtime using phased migration approach.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row mb-3">
+      <div class="col-lg-12">
+         <div class="card">
+            <div class="card-header">
                <h2>Jenkins CI/CD</h2>
             </div>
             <div class="card-body">
@@ -315,6 +556,113 @@
       <div class="col-lg-12">
          <div class="card">
             <div class="card-header">
+               <h2>API-level Security (OAuth, API Security)</h2>
+            </div>
+            <div class="card-body">
+               <div class="card-text">
+                  <p>With extensive experience in securing APIs and implementing authentication/authorization frameworks, I have architected and deployed robust API security solutions across enterprise web applications, microservices, and third-party integrations. My expertise spans <strong>OAuth 2.0</strong>, <strong>OpenID Connect (OIDC)</strong>, <strong>JWT (JSON Web Tokens)</strong>, <strong>API key management</strong>, and comprehensive API protection strategies.</p>
+                  <h4 id="-key-areas-of-expertise-"><strong>Key Areas of Expertise:</strong></h4>
+                  <ul>
+                     <li>
+                        <p><strong>OAuth 2.0 &amp; OpenID Connect:</strong></p>
+                        <ul>
+                           <li>Implemented OAuth 2.0 authorization flows including <strong>Authorization Code</strong>, <strong>Client Credentials</strong>, <strong>Resource Owner Password Credentials</strong>, and <strong>Implicit Grant</strong> for securing REST APIs and web applications.</li>
+                           <li>Integrated <strong>OpenID Connect (OIDC)</strong> for federated identity management with providers such as <strong>Okta</strong>, <strong>Auth0</strong>, <strong>Azure AD</strong>, <strong>Google</strong>, and <strong>Keycloak</strong>.</li>
+                           <li>Configured <strong>PKCE (Proof Key for Code Exchange)</strong> for secure authorization in mobile and single-page applications (SPAs).</li>
+                           <li>Managed OAuth scopes, refresh tokens, and token expiration policies to balance security and user experience.</li>
+                           <li>Built custom OAuth 2.0 authorization servers using <strong>Spring Security</strong>, <strong>IdentityServer</strong>, and <strong>Drupal Simple OAuth</strong> module.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>JWT (JSON Web Tokens):</strong></p>
+                        <ul>
+                           <li>Designed and implemented stateless authentication systems using <strong>JWT</strong> for secure API access across distributed microservices.</li>
+                           <li>Used asymmetric key pairs (RS256, ES256) and HMAC (HS256) for signing and verifying tokens.</li>
+                           <li>Implemented token refresh mechanisms, blacklisting, and short-lived access tokens for enhanced security.</li>
+                           <li>Integrated JWT-based authentication with <strong>API Gateways</strong> (AWS API Gateway, Kong, Apigee) for centralized token validation.</li>
+                           <li>Secured Drupal, Laravel, Node.js, and .NET APIs using JWT libraries and middleware.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>API Key Management:</strong></p>
+                        <ul>
+                           <li>Developed API key generation, rotation, and revocation systems for third-party developer access.</li>
+                           <li>Implemented rate limiting, quota enforcement, and usage analytics for API consumers.</li>
+                           <li>Secured API keys using <strong>environment variables</strong>, <strong>AWS Secrets Manager</strong>, <strong>Azure Key Vault</strong>, and <strong>HashiCorp Vault</strong>.</li>
+                           <li>Built developer portals with self-service API key provisioning and documentation.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>API Security Best Practices:</strong></p>
+                        <ul>
+                           <li>Enforced <strong>HTTPS/TLS encryption</strong> for all API communications with certificate pinning where applicable.</li>
+                           <li>Implemented <strong>CORS (Cross-Origin Resource Sharing)</strong> policies to restrict unauthorized cross-domain API access.</li>
+                           <li>Applied <strong>input validation</strong>, <strong>output encoding</strong>, and <strong>SQL injection prevention</strong> to protect against common attack vectors.</li>
+                           <li>Used <strong>rate limiting</strong> and <strong>throttling</strong> to prevent abuse and DDoS attacks (via Nginx, AWS WAF, Cloudflare).</li>
+                           <li>Configured <strong>Content Security Policy (CSP)</strong> and <strong>HSTS</strong> headers for additional client-side protection.</li>
+                           <li>Conducted <strong>API penetration testing</strong> and vulnerability assessments using tools like <strong>OWASP ZAP</strong>, <strong>Burp Suite</strong>, and <strong>Postman</strong>.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Role-Based Access Control (RBAC) &amp; Permissions:</strong></p>
+                        <ul>
+                           <li>Designed fine-grained RBAC systems to control API endpoint access based on user roles and permissions.</li>
+                           <li>Implemented <strong>attribute-based access control (ABAC)</strong> and <strong>policy-based authorization</strong> using <strong>Open Policy Agent (OPA)</strong> and custom middleware.</li>
+                           <li>Integrated RBAC with identity providers via SAML, OIDC, and LDAP for enterprise SSO solutions.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>API Gateways &amp; Security Layers:</strong></p>
+                        <ul>
+                           <li>Deployed and configured API gateways (<strong>AWS API Gateway</strong>, <strong>Kong</strong>, <strong>Apigee</strong>, <strong>Azure API Management</strong>) for centralized authentication, rate limiting, and logging.</li>
+                           <li>Implemented <strong>mutual TLS (mTLS)</strong> for client certificate authentication in high-security environments.</li>
+                           <li>Used <strong>Web Application Firewalls (WAF)</strong> to block malicious requests and enforce security rules at the edge.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Monitoring &amp; Auditing:</strong></p>
+                        <ul>
+                           <li>Implemented comprehensive API logging and monitoring using <strong>AWS CloudWatch</strong>, <strong>ELK Stack</strong>, <strong>Datadog</strong>, and <strong>Splunk</strong>.</li>
+                           <li>Created real-time alerts for suspicious activities such as failed authentication attempts, abnormal traffic patterns, and token abuse.</li>
+                           <li>Maintained detailed audit trails for compliance with <strong>GDPR</strong>, <strong>HIPAA</strong>, <strong>PCI DSS</strong>, and <strong>SOC 2</strong> requirements.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Third-Party API Integration Security:</strong></p>
+                        <ul>
+                           <li>Secured integrations with external APIs (Salesforce, Stripe, Twilio, Google APIs) using OAuth, API keys, and webhook signature verification.</li>
+                           <li>Implemented retry logic, circuit breakers, and failover mechanisms to handle third-party API failures gracefully.</li>
+                           <li>Validated and sanitized data received from external APIs to prevent injection attacks and data corruption.</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <h4 id="-tools-technologies-"><strong>Tools &amp; Technologies:</strong></h4>
+                  <ul>
+                     <li><strong>Authentication Frameworks:</strong> OAuth 2.0, OpenID Connect, SAML 2.0, JWT</li>
+                     <li><strong>Identity Providers:</strong> Okta, Auth0, Azure AD, Keycloak, AWS Cognito, Google Identity</li>
+                     <li><strong>API Gateways:</strong> AWS API Gateway, Kong, Apigee, Azure API Management, Tyk</li>
+                     <li><strong>Security Tools:</strong> OWASP ZAP, Burp Suite, Postman, SSL Labs, Security Headers</li>
+                     <li><strong>Secret Management:</strong> AWS Secrets Manager, Azure Key Vault, HashiCorp Vault, Docker Secrets</li>
+                     <li><strong>Rate Limiting:</strong> Nginx, AWS WAF, Cloudflare, Redis-based rate limiters</li>
+                     <li><strong>Programming:</strong> PHP (Drupal, Laravel), Node.js (Express, NestJS), Python (Flask, FastAPI), .NET Core</li>
+                     <li><strong>Monitoring:</strong> AWS CloudWatch, ELK Stack, Datadog, Splunk, Prometheus, Grafana</li>
+                  </ul>
+                  <h4 id="-achievements-"><strong>Achievements:</strong></h4>
+                  <ul>
+                     <li>Successfully implemented <strong>zero-trust API security architecture</strong> for a federal government application, passing rigorous security audits and penetration tests.</li>
+                     <li>Reduced unauthorized API access attempts by <strong>95%</strong> through implementation of OAuth 2.0, rate limiting, and WAF rules.</li>
+                     <li>Achieved <strong>PCI DSS compliance</strong> for payment processing APIs by implementing end-to-end encryption, tokenization, and secure key management.</li>
+                     <li>Designed and deployed a self-service developer portal with OAuth-based API access, serving <strong>50+ third-party integrations</strong> with 99.9% uptime.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row mb-3">
+      <div class="col-lg-12">
+         <div class="card">
+            <div class="card-header">
                <h2>GitHub Actions</h2>
             </div>
             <div class="card-body">
@@ -366,6 +714,143 @@
                      </li>
                      <li>Leveraged <code>drush updb</code>, <code>drush cex</code>, and <code>drush cr</code> as part of post-deployment routines for Drupal sites.</li>
                      <li>Automated semantic versioning, changelog generation, and release tagging via <code>actions/create-release</code> and <code>conventional-changelog</code>.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row mb-3">
+      <div class="col-lg-12">
+         <div class="card">
+            <div class="card-header">
+               <h2>System-level Testing / Integration / Performance / Stress Testing</h2>
+            </div>
+            <div class="card-body">
+               <div class="card-text">
+                  <p>With extensive experience in enterprise-grade quality assurance and performance engineering, I have designed and implemented comprehensive testing strategies that ensure system reliability, scalability, and performance under real-world conditions. My expertise spans <strong>integration testing</strong>, <strong>load testing</strong>, <strong>stress testing</strong>, <strong>performance profiling</strong>, and <strong>automated test frameworks</strong> across web applications, APIs, and microservices architectures.</p>
+                  <h4 id="-key-areas-of-expertise-"><strong>Key Areas of Expertise:</strong></h4>
+                  <ul>
+                     <li>
+                        <p><strong>Integration Testing:</strong></p>
+                        <ul>
+                           <li>Designed end-to-end integration test suites validating interactions between frontend applications, backend APIs, databases, and third-party services.</li>
+                           <li>Implemented <strong>Behat</strong> (BDD) test scenarios for Drupal applications, covering user workflows, content management, and permission systems.</li>
+                           <li>Created <strong>Playwright</strong> and <strong>Cypress</strong> test scripts for complex UI interactions, form submissions, and multi-step user journeys.</li>
+                           <li>Developed API integration tests using <strong>Postman</strong>, <strong>Newman</strong>, and <strong>REST Assured</strong> to verify RESTful endpoints, request/response validation, and error handling.</li>
+                           <li>Automated integration testing in CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI) with environment-specific configurations and test data management.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Performance Testing:</strong></p>
+                        <ul>
+                           <li>Conducted comprehensive performance testing using <strong>Apache JMeter</strong>, <strong>K6</strong>, <strong>Gatling</strong>, and <strong>Locust</strong> to measure response times, throughput, and resource utilization.</li>
+                           <li>Established performance baselines and SLAs (Service Level Agreements) for critical application workflows and API endpoints.</li>
+                           <li>Identified and resolved performance bottlenecks through profiling tools including <strong>New Relic</strong>, <strong>Blackfire.io</strong>, <strong>Xdebug</strong>, and <strong>Chrome DevTools</strong>.</li>
+                           <li>Optimized database query performance using <strong>MySQL EXPLAIN</strong>, <strong>PostgreSQL EXPLAIN ANALYZE</strong>, and query profiling tools.</li>
+                           <li>Performed frontend performance audits with <strong>Lighthouse</strong>, <strong>WebPageTest</strong>, and <strong>GTmetrix</strong>, addressing issues like render-blocking resources, large payloads, and inefficient JavaScript.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Load Testing:</strong></p>
+                        <ul>
+                           <li>Simulated realistic user loads with <strong>K6</strong>, <strong>JMeter</strong>, and <strong>Gatling</strong> to validate system capacity and scalability under expected traffic patterns.</li>
+                           <li>Created parameterized test scenarios with randomized data, think times, and concurrent user ramp-ups to mimic production behavior.</li>
+                           <li>Tested horizontal and vertical scaling strategies by monitoring system performance as load increased from baseline to peak traffic levels.</li>
+                           <li>Generated detailed load test reports including response time percentiles (p50, p95, p99), error rates, and resource consumption metrics.</li>
+                           <li>Validated auto-scaling configurations (AWS Auto Scaling, Kubernetes HPA) under sustained load conditions.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Stress Testing:</strong></p>
+                        <ul>
+                           <li>Conducted stress tests to determine system breaking points and failure modes by pushing infrastructure beyond normal operating capacity.</li>
+                           <li>Identified resource exhaustion scenarios (CPU, memory, disk I/O, network bandwidth) and implemented safeguards to prevent cascading failures.</li>
+                           <li>Tested system recovery and graceful degradation mechanisms under extreme load conditions.</li>
+                           <li>Validated connection pooling limits, database connection timeouts, and circuit breaker patterns during stress scenarios.</li>
+                           <li>Documented failure thresholds and capacity limits to inform infrastructure planning and disaster recovery strategies.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Endurance Testing (Soak Testing):</strong></p>
+                        <ul>
+                           <li>Executed long-running tests (8-72 hours) to detect memory leaks, resource exhaustion, and performance degradation over time.</li>
+                           <li>Monitored application and system metrics continuously using <strong>Prometheus</strong>, <strong>Grafana</strong>, and <strong>CloudWatch</strong> during soak tests.</li>
+                           <li>Identified and resolved issues such as database connection leaks, memory bloat, and log file growth impacting long-term stability.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Spike Testing:</strong></p>
+                        <ul>
+                           <li>Simulated sudden traffic spikes (Black Friday, product launches, breaking news events) to validate system resilience.</li>
+                           <li>Tested caching layers (Varnish, Redis, CDN) and rate limiting mechanisms under rapid traffic increases.</li>
+                           <li>Verified that systems recovered properly after spike conditions subsided without manual intervention.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Database Performance Testing:</strong></p>
+                        <ul>
+                           <li>Tested database performance under concurrent read/write operations, replication lag, and transaction throughput.</li>
+                           <li>Validated index effectiveness, query optimization, and connection pool sizing using load simulation tools.</li>
+                           <li>Measured impact of database maintenance operations (VACUUM, ANALYZE, reindexing) on production-like workloads.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>API Performance Testing:</strong></p>
+                        <ul>
+                           <li>Created K6 scripts to test RESTful, GraphQL, and SOAP APIs under various load patterns.</li>
+                           <li>Validated API rate limiting, throttling, and quota enforcement mechanisms.</li>
+                           <li>Measured API latency, payload size optimization, and compression effectiveness.</li>
+                           <li>Tested OAuth token generation, validation, and refresh flows under high concurrency.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>CDN & Caching Performance:</strong></p>
+                        <ul>
+                           <li>Validated CDN cache hit ratios and edge performance using <strong>Cloudflare Analytics</strong>, <strong>AWS CloudFront metrics</strong>, and <strong>Fastly Real-Time Stats</strong>.</li>
+                           <li>Tested cache invalidation strategies and purge propagation times across distributed cache layers.</li>
+                           <li>Measured impact of browser caching, ETags, and Cache-Control headers on client-side performance.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Test Automation & CI/CD Integration:</strong></p>
+                        <ul>
+                           <li>Integrated performance tests into CI/CD pipelines with automated thresholds and failure criteria.</li>
+                           <li>Created shift-left performance testing strategies by running lightweight tests on every commit.</li>
+                           <li>Implemented performance regression detection by comparing test results across builds and branches.</li>
+                           <li>Generated test reports automatically with trend analysis, historical comparisons, and actionable recommendations.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Monitoring & Observability During Tests:</strong></p>
+                        <ul>
+                           <li>Correlated test execution data with real-time infrastructure metrics (CPU, memory, disk, network) using <strong>Grafana</strong> dashboards.</li>
+                           <li>Captured application logs, error traces, and database slow queries during performance test runs.</li>
+                           <li>Used <strong>distributed tracing</strong> (Jaeger, Zipkin) to identify latency hotspots across microservices during load tests.</li>
+                           <li>Implemented custom instrumentation and APM (Application Performance Monitoring) integration for detailed performance insights.</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <h4 id="-tools-technologies-"><strong>Tools &amp; Technologies:</strong></h4>
+                  <ul>
+                     <li><strong>Load/Stress Testing:</strong> K6, Apache JMeter, Gatling, Locust, Artillery, Siege</li>
+                     <li><strong>Integration Testing:</strong> Behat, Playwright, Cypress, Selenium, Postman, Newman, REST Assured</li>
+                     <li><strong>Performance Profiling:</strong> New Relic, Blackfire.io, Xdebug, Chrome DevTools, Firefox Profiler</li>
+                     <li><strong>Database Testing:</strong> MySQL EXPLAIN, PostgreSQL EXPLAIN ANALYZE, pgBadger, pt-query-digest</li>
+                     <li><strong>Frontend Performance:</strong> Lighthouse, WebPageTest, GTmetrix, PageSpeed Insights</li>
+                     <li><strong>Monitoring:</strong> Prometheus, Grafana, Datadog, New Relic, AWS CloudWatch, ELK Stack</li>
+                     <li><strong>Distributed Tracing:</strong> Jaeger, Zipkin, AWS X-Ray, OpenTelemetry</li>
+                     <li><strong>CDN/Caching:</strong> Cloudflare, AWS CloudFront, Fastly, Varnish, Redis</li>
+                     <li><strong>CI/CD Integration:</strong> Jenkins, GitHub Actions, GitLab CI, CircleCI</li>
+                     <li><strong>Scripting:</strong> JavaScript, Python, Bash, Groovy</li>
+                  </ul>
+                  <h4 id="-achievements-"><strong>Achievements:</strong></h4>
+                  <ul>
+                     <li>Reduced application response time by <strong>60%</strong> through systematic performance testing, profiling, and optimization.</li>
+                     <li>Identified and resolved critical memory leaks detected during 72-hour soak tests, preventing production outages.</li>
+                     <li>Successfully validated system capacity to handle <strong>10x peak traffic</strong> during load testing, enabling confident launch of high-profile campaigns.</li>
+                     <li>Implemented automated performance regression testing that caught <strong>95% of performance issues</strong> before reaching production.</li>
+                     <li>Reduced API latency from <strong>800ms to 120ms</strong> by identifying database query inefficiencies through load testing and profiling.</li>
                   </ul>
                </div>
             </div>
@@ -491,6 +976,89 @@
                      <li><strong>Headless CMS Frontend</strong>: Built an Angular frontend that consumed JSON APIs from a Drupal 10 backend. Included dynamic route generation, SEO optimizations, and static site generation for GitHub Pages.</li>
                      <li><strong>AI-Powered Analytics Dashboard</strong>: Created an Angular-based admin dashboard visualizing airport event data using Chart.js and Google Maps APIs.</li>
                      <li><strong>Educational Platform</strong>: Developed an e-learning interface with role-based access control, video integration, and quiz modules using Angular + Firebase.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row mb-3">
+      <div class="col-lg-12">
+         <div class="card">
+            <div class="card-header">
+               <h2>Llama AI Custom Projects</h2>
+            </div>
+            <div class="card-body">
+               <div class="card-text">
+                  <p>I have extensive experience designing, developing, and deploying custom AI-powered applications leveraging <strong>Meta's Llama models</strong> (Llama 2, Llama 3, and Code Llama) for natural language processing, code generation, content creation, and intelligent automation. My work spans local and cloud-based implementations, API integrations, and fine-tuning workflows tailored to specific business use cases.</p>
+                  <h4 id="-key-areas-of-expertise-"><strong>Key Areas of Expertise:</strong></h4>
+                  <ul>
+                     <li>
+                        <p><strong>Custom Llama Model Deployment:</strong></p>
+                        <ul>
+                           <li>Deployed Llama models locally using <strong>Ollama</strong>, <strong>LM Studio</strong>, and <strong>llama.cpp</strong> for privacy-focused, on-premises AI solutions.</li>
+                           <li>Configured cloud-based inference endpoints using <strong>AWS SageMaker</strong>, <strong>Hugging Face Inference API</strong>, and <strong>Replicate</strong> for scalable production workloads.</li>
+                           <li>Optimized model performance through quantization (GGUF, GPTQ) and hardware acceleration (CUDA, Metal) to reduce latency and memory footprint.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>AI-Powered Applications:</strong></p>
+                        <ul>
+                           <li>Built conversational AI assistants for customer support, technical documentation navigation, and internal knowledge management using Llama 2 and RAG (Retrieval-Augmented Generation) architectures.</li>
+                           <li>Developed code generation and review tools using <strong>Code Llama</strong> to accelerate software development workflows, including automated test generation, documentation, and refactoring suggestions.</li>
+                           <li>Created content generation pipelines for marketing copy, blog posts, and SEO-optimized articles using Llama 3 with custom prompt engineering and post-processing.</li>
+                           <li>Implemented intelligent data extraction and transformation tools to parse unstructured documents (PDFs, emails, logs) and generate structured outputs.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Fine-Tuning &amp; Model Customization:</strong></p>
+                        <ul>
+                           <li>Fine-tuned Llama models on domain-specific datasets using <strong>LoRA (Low-Rank Adaptation)</strong> and <strong>QLoRA</strong> for parameter-efficient training.</li>
+                           <li>Used <strong>Hugging Face Transformers</strong>, <strong>PEFT</strong>, and <strong>Axolotl</strong> frameworks to customize models for specialized tasks such as technical support, legal document analysis, and medical Q&amp;A.</li>
+                           <li>Conducted prompt engineering experiments and A/B testing to optimize model outputs for accuracy, tone, and relevance.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>RAG (Retrieval-Augmented Generation):</strong></p>
+                        <ul>
+                           <li>Architected RAG systems using <strong>LangChain</strong>, <strong>LlamaIndex</strong>, and vector databases (<strong>Pinecone</strong>, <strong>Weaviate</strong>, <strong>Chroma</strong>) to enhance Llama models with external knowledge sources.</li>
+                           <li>Integrated enterprise data sources (Confluence, SharePoint, Notion, internal APIs) into AI-powered search and Q&amp;A systems.</li>
+                           <li>Implemented semantic search, document chunking, and embedding generation using <strong>sentence-transformers</strong> and <strong>OpenAI embeddings</strong>.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>API Integration &amp; Orchestration:</strong></p>
+                        <ul>
+                           <li>Built RESTful and GraphQL APIs to expose Llama-powered services for web and mobile applications.</li>
+                           <li>Integrated Llama models with existing workflows using <strong>Zapier</strong>, <strong>n8n</strong>, and custom middleware for automated content moderation, sentiment analysis, and data enrichment.</li>
+                           <li>Developed multi-agent systems where Llama models collaborate with other AI services (GPT-4, Claude, DALL-E) to handle complex workflows.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p><strong>Security &amp; Privacy:</strong></p>
+                        <ul>
+                           <li>Implemented on-premises Llama deployments to ensure data privacy and compliance with GDPR, HIPAA, and other regulatory requirements.</li>
+                           <li>Applied input sanitization, output filtering, and guardrails to prevent prompt injection, data leakage, and inappropriate content generation.</li>
+                           <li>Used role-based access controls and audit logging for secure multi-user AI systems.</li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <h4 id="-tools-technologies-"><strong>Tools &amp; Technologies:</strong></h4>
+                  <ul>
+                     <li><strong>Model Deployment:</strong> Ollama, llama.cpp, LM Studio, Hugging Face Inference API, AWS SageMaker, Replicate</li>
+                     <li><strong>Frameworks:</strong> LangChain, LlamaIndex, Hugging Face Transformers, PEFT, Axolotl</li>
+                     <li><strong>Vector Databases:</strong> Pinecone, Weaviate, Chroma, Qdrant, FAISS</li>
+                     <li><strong>Fine-Tuning:</strong> LoRA, QLoRA, Unsloth, Modal</li>
+                     <li><strong>Programming:</strong> Python, TypeScript, FastAPI, Flask, Node.js</li>
+                     <li><strong>Infrastructure:</strong> Docker, Kubernetes, AWS (EC2, Lambda, S3), Azure, Google Cloud</li>
+                     <li><strong>Monitoring:</strong> Weights &amp; Biases, MLflow, Prometheus, Grafana</li>
+                  </ul>
+                  <h4 id="-achievements-"><strong>Achievements:</strong></h4>
+                  <ul>
+                     <li>Reduced customer support response time by <strong>70%</strong> by deploying an AI-powered assistant capable of handling 80% of tier-1 support queries.</li>
+                     <li>Achieved <strong>95%+ accuracy</strong> in domain-specific Q&amp;A tasks through fine-tuning and RAG optimization.</li>
+                     <li>Enabled <strong>fully offline AI capabilities</strong> for clients in regulated industries, ensuring data sovereignty and compliance.</li>
+                     <li>Accelerated software development workflows by automating repetitive coding tasks, saving developers an estimated <strong>10+ hours per week</strong>.</li>
                   </ul>
                </div>
             </div>

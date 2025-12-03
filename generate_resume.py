@@ -13,7 +13,7 @@ from reportlab.lib.colors import HexColor
 
 def create_resume():
     """Generate a 2-page PDF resume"""
-    
+
     # Create PDF
     pdf_path = "resume.pdf"
     doc = SimpleDocTemplate(
@@ -24,13 +24,13 @@ def create_resume():
         topMargin=0.5*inch,
         bottomMargin=0.5*inch
     )
-    
+
     # Container for the 'Flowable' objects
     elements = []
-    
+
     # Define custom styles
     styles = getSampleStyleSheet()
-    
+
     # Title style
     title_style = ParagraphStyle(
         'CustomTitle',
@@ -41,7 +41,7 @@ def create_resume():
         alignment=TA_CENTER,
         fontName='Helvetica-Bold'
     )
-    
+
     # Subtitle style
     subtitle_style = ParagraphStyle(
         'CustomSubtitle',
@@ -52,7 +52,7 @@ def create_resume():
         alignment=TA_CENTER,
         fontName='Helvetica'
     )
-    
+
     # Section heading style
     section_style = ParagraphStyle(
         'SectionHeading',
@@ -67,7 +67,7 @@ def create_resume():
         borderPadding=0,
         leftIndent=0
     )
-    
+
     # Subsection heading style
     subsection_style = ParagraphStyle(
         'SubsectionHeading',
@@ -78,7 +78,7 @@ def create_resume():
         spaceBefore=4,
         fontName='Helvetica-Bold'
     )
-    
+
     # Body text style
     body_style = ParagraphStyle(
         'CustomBody',
@@ -90,7 +90,7 @@ def create_resume():
         fontName='Helvetica',
         leading=11
     )
-    
+
     # Bullet style
     bullet_style = ParagraphStyle(
         'BulletStyle',
@@ -103,26 +103,26 @@ def create_resume():
         fontName='Helvetica',
         leading=10
     )
-    
+
     # Header
     elements.append(Paragraph("Dan Gibson", title_style))
     elements.append(Paragraph("Senior Drupal Developer/Architect | Senior Full-Stack Developer | DevOps Engineer | AI Solutions Architect", subtitle_style))
     elements.append(Spacer(1, 0.1*inch))
-    
+
     # Professional Summary
     elements.append(Paragraph("PROFESSIONAL SUMMARY", section_style))
-    summary = """Accomplished Full-Stack Developer and DevOps Engineer with 15+ years of experience delivering enterprise-scale 
-    web applications, cloud infrastructure, and AI-powered solutions. Expert in Drupal CMS (6-10), Angular, Docker, CI/CD automation, 
-    AWS, API security, and system administration. Proven track record leading complex migrations, architecting scalable systems, 
-    and implementing cutting-edge technologies including Llama AI models, OAuth 2.0 security, and comprehensive testing frameworks. 
-    Specialized in federal government and healthcare sectors with deep expertise in WCAG compliance, security hardening, and 
+    summary = """Accomplished Full-Stack Developer and DevOps Engineer with 15+ years of experience delivering enterprise-scale
+    web applications, cloud infrastructure, and AI-powered solutions. Expert in Drupal CMS (6-10), Angular, Docker, CI/CD automation,
+    AWS, API security, and system administration. Proven track record leading complex migrations, architecting scalable systems,
+    and implementing cutting-edge technologies including Llama AI models, OAuth 2.0 security, and comprehensive testing frameworks.
+    Specialized in federal government and healthcare sectors with deep expertise in WCAG compliance, security hardening, and
     performance optimization."""
     elements.append(Paragraph(summary, body_style))
     elements.append(Spacer(1, 0.1*inch))
-    
+
     # Core Technical Competencies
     elements.append(Paragraph("CORE TECHNICAL COMPETENCIES", section_style))
-    
+
     competencies = [
         "<b>Web Development:</b> Drupal 6-10 | Angular 2-16+ | React | jQuery | TypeScript | PHP | Node.js | RESTful APIs | GraphQL | JSON:API",
         "<b>DevOps & Infrastructure:</b> Docker (Lando/Docksal) | Kubernetes | Jenkins | GitHub Actions | Terraform | Ansible | AWS (EC2, RDS, S3, Lambda, CloudWatch) | Azure | Linux Administration (Ubuntu, CentOS, RHEL)",
@@ -133,15 +133,15 @@ def create_resume():
         "<b>AI & Machine Learning:</b> Llama 2/3 | Code Llama | LangChain | LlamaIndex | RAG Architecture | Model Fine-tuning | Ollama",
         "<b>Monitoring & Observability:</b> Prometheus | Grafana | ELK Stack | Datadog | New Relic | CloudWatch | Nagios"
     ]
-    
+
     for comp in competencies:
         elements.append(Paragraph(f"• {comp}", bullet_style))
-    
+
     elements.append(Spacer(1, 0.1*inch))
-    
+
     # Key Technical Expertise (Highlights)
     elements.append(Paragraph("KEY TECHNICAL EXPERTISE", section_style))
-    
+
     expertise_items = [
         ("<b>Drupal CMS Mastery:</b>", "Enterprise-level implementations covering Drupal 6-10. Expert in complex migrations, custom module/theme development, API integrations, SSO via SimpleSAML, and USWDS/Bootstrap theming."),
         ("<b>System Administration & DevOps:</b>", "15+ years managing production Linux infrastructure (Ubuntu, CentOS, RHEL). Expert in LAMP/LEMP stacks, performance tuning, security hardening, backup/disaster recovery, and achieving 99.99% uptime."),
@@ -150,15 +150,15 @@ def create_resume():
         ("<b>Performance & Load Testing:</b>", "Conducted comprehensive testing with K6, JMeter, Gatling. Reduced response times by 60% and validated 10x peak traffic capacity. Expert in profiling, optimization, and bottleneck resolution."),
         ("<b>AI Solutions Development:</b>", "Deployed Llama AI models (2/3/Code Llama) for enterprise knowledge assistants, code review automation, and content generation. Built RAG systems with LangChain/LlamaIndex achieving 95%+ accuracy."),
     ]
-    
+
     for title, desc in expertise_items:
         elements.append(Paragraph(f"<b>•</b> {title} {desc}", bullet_style))
-    
+
     elements.append(Spacer(1, 0.15*inch))
-    
+
     # PAGE 2 - Portfolio & Additional Experience
     elements.append(Paragraph("CLIENT PORTFOLIO & EXPERIENCE", section_style))
-    
+
     # Portfolio entries (condensed)
     portfolio = [
         ("Quantum Improvements Consulting, LLC", "8(m) woman-owned small business specializing in training solutions. Delivered research-based solutions enhancing human performance for government clients."),
@@ -178,15 +178,15 @@ def create_resume():
         ("Energy Enterprise Solutions, LLC", "Systems integrator for federal government. Delivered IT infrastructure, cybersecurity, and systems engineering solutions."),
         ("Booz Allen Hamilton", "Leading consulting firm. Developed management and technology solutions for defense, intelligence, and civil sectors."),
     ]
-    
+
     for org, desc in portfolio:
         elements.append(Paragraph(f"<b>{org}:</b> {desc}", bullet_style))
-    
+
     elements.append(Spacer(1, 0.1*inch))
-    
+
     # Additional Technical Areas
     elements.append(Paragraph("ADDITIONAL TECHNICAL AREAS", section_style))
-    
+
     additional_areas = [
         ("<b>Bash/Shell Scripting:</b>", "Advanced automation for CI/CD, deployment orchestration, system administration, and data processing. Created hundreds of production scripts."),
         ("<b>Docker & Containerization:</b>", "Expert with Lando/Docksal for local development. Orchestrated production containers with Kubernetes, Docker Swarm, and AWS ECS."),
@@ -195,12 +195,12 @@ def create_resume():
         ("<b>Monitoring & Alerting:</b>", "Deployed Prometheus, Grafana, Nagios, Zabbix, and ELK Stack. Built real-time dashboards and integrated PagerDuty/Slack alerting."),
         ("<b>Frontend Frameworks:</b>", "Angular (2-16+), React, jQuery. Built SPAs, headless CMS frontends, and progressive web applications with advanced state management."),
     ]
-    
+
     for title, desc in additional_areas:
         elements.append(Paragraph(f"<b>•</b> {title} {desc}", bullet_style))
-    
+
     elements.append(Spacer(1, 0.1*inch))
-    
+
     # Certifications & Methodologies
     elements.append(Paragraph("METHODOLOGIES & STANDARDS", section_style))
     methodologies = [
@@ -210,12 +210,12 @@ def create_resume():
         "API-First Architecture | Microservices | RESTful Design Principles | Headless CMS",
         "Test-Driven Development (TDD) | Behavior-Driven Development (BDD) | Continuous Testing"
     ]
-    
+
     for method in methodologies:
         elements.append(Paragraph(f"• {method}", bullet_style))
-    
+
     elements.append(Spacer(1, 0.1*inch))
-    
+
     # Professional Highlights
     elements.append(Paragraph("PROFESSIONAL HIGHLIGHTS", section_style))
     highlights = [
@@ -228,12 +228,12 @@ def create_resume():
         "Developed custom Drupal modules for workflow automation, API endpoints, and third-party integrations (Salesforce, Azure)",
         "Conducted load testing validating system capacity to handle 10x peak traffic during high-profile campaigns"
     ]
-    
+
     for highlight in highlights:
         elements.append(Paragraph(f"• {highlight}", bullet_style))
-    
+
     elements.append(Spacer(1, 0.15*inch))
-    
+
     # Footer
     footer_style = ParagraphStyle(
         'Footer',
@@ -244,7 +244,7 @@ def create_resume():
         fontName='Helvetica-Oblique'
     )
     elements.append(Paragraph("References and detailed project portfolios available upon request", footer_style))
-    
+
     # Build PDF
     doc.build(elements)
     print(f"Resume generated successfully: {pdf_path}")

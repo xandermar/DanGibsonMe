@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "NX_SKIP_NX_CACHE=true ng build --prod --aot --base-href=/ && echo www.dangibson.me > dist/DanGibsonMe-alpha/CNAME && npx angular-cli-ghpages --dir=dist/DanGibsonMe-alpha",
+    "generate-resume": "source .venv/bin/activate && python generate_resume.py && cp resume.pdf src/assets/resume.pdf",
+    "deploy": "npm run generate-resume && NX_SKIP_NX_CACHE=true ng build --prod --aot --base-href=/ && echo www.dangibson.me > dist/DanGibsonMe-alpha/CNAME && npx angular-cli-ghpages --dir=dist/DanGibsonMe-alpha",
     "postinstall": "node ./decorate-angular-cli.js"
   },
   "private": true,

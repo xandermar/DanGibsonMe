@@ -1,9 +1,9 @@
-To deploy, run 'npm run deploy'
+# Deployment / Quality Commands
 
----
+This file is kept as a short pointer.
 
-npm run lint # Check code quality (like PHPCS)
+See `README.md` for the canonical instructions:
 
-npm run lint:fix # Auto-fix issues (like phpcbf). <---- most common
-
-npm run format # Format everything
+- Deploy: `npm run deploy`
+- Lint: `npm run lint` / `npm run lint:fix`
+- Format: `npm run format` / `npm run format:check`

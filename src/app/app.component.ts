@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 // Declare gtag globally
-declare let gtag: Function;
+declare const gtag: (...args: unknown[]) => void;
 
 @Component({
   selector: 'app-root',

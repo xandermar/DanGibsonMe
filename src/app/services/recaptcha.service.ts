@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
+interface Grecaptcha {
+  execute(siteKey: string, options: { action: string }): Promise<string>;
+}
+
 declare global {
   interface Window {
-    grecaptcha: any;
+    grecaptcha: Grecaptcha;
   }
 }
 

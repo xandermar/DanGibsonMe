@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-new-project',
   templateUrl: './new-project.component.html',
-  styleUrls: ['./new-project.component.scss']
+  styleUrls: ['./new-project.component.scss'],
 })
-export class NewProjectComponent implements OnInit {
-
+export class NewProjectComponent {
   hiringForm = {
     firstName: '',
     lastName: '',
@@ -19,21 +18,18 @@ export class NewProjectComponent implements OnInit {
     rateRange: '',
     employmentType: '',
     workLocation: '',
-    projectLocation: ''
+    projectLocation: '',
   };
 
   submitting = false;
   submitSuccess = false;
   submitError = false;
 
-  constructor(private http: HttpClient) { }
-
-  ngOnInit(): void {
-  }
+  constructor(private http: HttpClient) {}
 
   submitHiringForm(event: Event) {
     event.preventDefault();
-    
+
     this.submitting = true;
     this.submitSuccess = false;
     this.submitError = false;
@@ -54,7 +50,7 @@ export class NewProjectComponent implements OnInit {
     }
 
     this.http.post('https://forms.xdm.io/dangibson.php', formData).subscribe({
-      next: (response) => {
+      next: () => {
         this.submitting = false;
         this.submitSuccess = true;
         // Reset form
@@ -69,7 +65,7 @@ export class NewProjectComponent implements OnInit {
           rateRange: '',
           employmentType: '',
           workLocation: '',
-          projectLocation: ''
+          projectLocation: '',
         };
       },
       error: (error) => {
@@ -79,8 +75,7 @@ export class NewProjectComponent implements OnInit {
         console.error('Error status:', error.status);
         console.error('Error message:', error.message);
         console.error('Error details:', error.error);
-      }
+      },
     });
   }
-
 }

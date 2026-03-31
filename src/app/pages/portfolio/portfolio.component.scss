@@ -1,0 +1,26 @@
+.back-to-top {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 1030;
+
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.25rem;
+
+	background-color: #121212;
+	border: 1px solid #00d1ff;
+	color: #00d1ff;
+	cursor: pointer;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+	border-color: #00ffaa;
+	color: #00ffaa;
+	text-decoration: underline;
+}
+
+.back-to-top:focus {
+	outline: 2px solid #00ffaa;
+	outline-offset: 2px;
+}

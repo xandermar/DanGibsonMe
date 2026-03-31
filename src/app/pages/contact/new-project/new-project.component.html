@@ -11,100 +11,274 @@
           <h2>Hiring for a Project?</h2>
         </div>
         <div class="card-body">
-          <p class="mb-4">Are you looking to fill a role or position for a project? Please complete the form for immediate attention.</p>
+          <p class="mb-4">
+            Are you looking to fill a role or position for a project? Please
+            complete the form for immediate attention.
+          </p>
 
-          <div *ngIf="submitSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Success!</strong> Your request has been submitted. We'll be in touch soon!
-            <button type="button" class="btn-close" (click)="submitSuccess = false" aria-label="Close"></button>
+          <div
+            *ngIf="submitSuccess"
+            class="alert alert-success alert-dismissible fade show"
+            role="alert"
+          >
+            <strong>Success!</strong> Your request has been submitted. We'll be
+            in touch soon!
+            <button
+              type="button"
+              class="btn-close"
+              (click)="submitSuccess = false"
+              aria-label="Close"
+            ></button>
           </div>
 
-          <div *ngIf="submitError" class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Error!</strong> There was a problem submitting your request. Please try again.
-            <button type="button" class="btn-close" (click)="submitError = false" aria-label="Close"></button>
+          <div
+            *ngIf="submitError"
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+          >
+            <strong>Error!</strong> There was a problem submitting your request.
+            Please try again.
+            <button
+              type="button"
+              class="btn-close"
+              (click)="submitError = false"
+              aria-label="Close"
+            ></button>
           </div>
 
           <form (ngSubmit)="submitHiringForm($event)" #hiringFormEl="ngForm">
             <div class="row mb-3">
               <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)]="hiringForm.firstName" required>
+                <label for="firstName" class="form-label"
+                  >First Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  [(ngModel)]="hiringForm.firstName"
+                  required
+                />
               </div>
               <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="hiringForm.lastName" required>
+                <label for="lastName" class="form-label"
+                  >Last Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  [(ngModel)]="hiringForm.lastName"
+                  required
+                />
               </div>
             </div>
             <div class="row mb-3">
               <div class="col-md-6">
-                <label for="yourCompanyName" class="form-label">Your Company Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="yourCompanyName" name="yourCompanyName" [(ngModel)]="hiringForm.yourCompanyName" required>
+                <label for="yourCompanyName" class="form-label"
+                  >Your Company Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="yourCompanyName"
+                  name="yourCompanyName"
+                  [(ngModel)]="hiringForm.yourCompanyName"
+                  required
+                />
               </div>
               <div class="col-md-6">
-                <label for="projectCompanyName" class="form-label">Project Company Name / Client <span class="text-danger">*</span></label>
-                <small class="form-text text-muted d-block mb-2">This is needed to ensure there is no conflict of interest with any non-compete agreements in place.</small>
-                <input type="text" class="form-control" id="projectCompanyName" name="projectCompanyName" [(ngModel)]="hiringForm.projectCompanyName" required>
+                <label for="projectCompanyName" class="form-label"
+                  >Project Company Name / Client
+                  <span class="text-danger">*</span></label
+                >
+                <small class="form-text text-muted d-block mb-2"
+                  >This is needed to ensure there is no conflict of interest
+                  with any non-compete agreements in place.</small
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="projectCompanyName"
+                  name="projectCompanyName"
+                  [(ngModel)]="hiringForm.projectCompanyName"
+                  required
+                />
               </div>
             </div>
             <div class="row mb-3">
               <div class="col-md-6">
-                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="hiringForm.email" required>
+                <label for="email" class="form-label"
+                  >Email Address <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  [(ngModel)]="hiringForm.email"
+                  required
+                />
               </div>
               <div class="col-md-6">
-                <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="hiringForm.phone" required>
+                <label for="phone" class="form-label"
+                  >Phone Number <span class="text-danger">*</span></label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  [(ngModel)]="hiringForm.phone"
+                  required
+                />
               </div>
             </div>
             <div class="mb-3">
-              <label for="jobDescription" class="form-label">Job Description <span class="text-danger">*</span></label>
-              <small class="form-text text-muted d-block mb-2">Copy and paste the entire job description for my review.</small>
-              <textarea class="form-control" id="jobDescription" name="jobDescription" [(ngModel)]="hiringForm.jobDescription" rows="4" required></textarea>
+              <label for="jobDescription" class="form-label"
+                >Job Description <span class="text-danger">*</span></label
+              >
+              <small class="form-text text-muted d-block mb-2"
+                >Copy and paste the entire job description for my review.</small
+              >
+              <textarea
+                class="form-control"
+                id="jobDescription"
+                name="jobDescription"
+                [(ngModel)]="hiringForm.jobDescription"
+                rows="4"
+                required
+              ></textarea>
             </div>
             <div class="mb-3">
-              <label for="rateRange" class="form-label">Rate/Salary Range <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="rateRange" name="rateRange" [(ngModel)]="hiringForm.rateRange" placeholder="e.g., $100-150/hr or $120k-150k/year" required>
+              <label for="rateRange" class="form-label"
+                >Rate/Salary Range <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="rateRange"
+                name="rateRange"
+                [(ngModel)]="hiringForm.rateRange"
+                placeholder="e.g., $100-150/hr or $120k-150k/year"
+                required
+              />
             </div>
             <div class="row mb-3">
               <div class="col-md-6">
-                <label class="form-label">Employment Type <span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Employment Type <span class="text-danger">*</span></label
+                >
                 <div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="employmentType" id="c2c" value="C2C" [(ngModel)]="hiringForm.employmentType" required>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="employmentType"
+                      id="c2c"
+                      value="C2C"
+                      [(ngModel)]="hiringForm.employmentType"
+                      required
+                    />
                     <label class="form-check-label" for="c2c">C2C</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="employmentType" id="w2" value="W2" [(ngModel)]="hiringForm.employmentType" required>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="employmentType"
+                      id="w2"
+                      value="W2"
+                      [(ngModel)]="hiringForm.employmentType"
+                      required
+                    />
                     <label class="form-check-label" for="w2">W2</label>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
-                <label class="form-label">Work Location <span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Work Location <span class="text-danger">*</span></label
+                >
                 <div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="workLocation" id="onsite" value="Onsite" [(ngModel)]="hiringForm.workLocation" required>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="workLocation"
+                      id="onsite"
+                      value="Onsite"
+                      [(ngModel)]="hiringForm.workLocation"
+                      required
+                    />
                     <label class="form-check-label" for="onsite">Onsite</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="workLocation" id="remote" value="Remote" [(ngModel)]="hiringForm.workLocation" required>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="workLocation"
+                      id="remote"
+                      value="Remote"
+                      [(ngModel)]="hiringForm.workLocation"
+                      required
+                    />
                     <label class="form-check-label" for="remote">Remote</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="workLocation" id="hybrid" value="Hybrid" [(ngModel)]="hiringForm.workLocation" required>
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="workLocation"
+                      id="hybrid"
+                      value="Hybrid"
+                      [(ngModel)]="hiringForm.workLocation"
+                      required
+                    />
                     <label class="form-check-label" for="hybrid">Hybrid</label>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="mb-3" *ngIf="hiringForm.workLocation === 'Onsite' || hiringForm.workLocation === 'Hybrid'">
-              <label for="projectLocation" class="form-label">City/State of Project Location <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="projectLocation" name="projectLocation" [(ngModel)]="hiringForm.projectLocation" placeholder="e.g., Austin, TX" [required]="hiringForm.workLocation === 'Onsite' || hiringForm.workLocation === 'Hybrid'">
+            <div
+              class="mb-3"
+              *ngIf="
+                hiringForm.workLocation === 'Onsite' ||
+                hiringForm.workLocation === 'Hybrid'
+              "
+            >
+              <label for="projectLocation" class="form-label"
+                >City/State of Project Location
+                <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="projectLocation"
+                name="projectLocation"
+                [(ngModel)]="hiringForm.projectLocation"
+                placeholder="e.g., Austin, TX"
+                [required]="
+                  hiringForm.workLocation === 'Onsite' ||
+                  hiringForm.workLocation === 'Hybrid'
+                "
+              />
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="submit" class="btn btn-primary btn-lg" [disabled]="submitting || !hiringFormEl.valid">
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg"
+                [disabled]="submitting || !hiringFormEl.valid"
+              >
                 <span *ngIf="!submitting">Submit Request</span>
                 <span *ngIf="submitting">
-                  <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                  <span
+                    class="spinner-border spinner-border-sm me-2"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
                   Submitting...
                 </span>
               </button>

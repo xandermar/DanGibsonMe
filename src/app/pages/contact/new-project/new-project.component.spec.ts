@@ -1,6 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { FormsModule } from '@angular/forms';
 
 import { NewProjectComponent } from './new-project.component';
 
@@ -10,8 +8,7 @@ describe('NewProjectComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewProjectComponent ],
-      imports: [HttpClientTestingModule, FormsModule]
+      declarations: [ NewProjectComponent ]
     })
     .compileComponents();
   });

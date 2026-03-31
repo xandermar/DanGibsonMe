@@ -5,6 +5,11 @@
 export const environment = {
   production: false,
   recaptchaSiteKey: '6Lf8PkArAAAAAB8eV3ZebE4dQ5NHpGnYKHzWvblm',
+  emailjs: {
+    publicKey: '',
+    serviceId: '',
+    templateId: '',
+  },
 };
 
 /*

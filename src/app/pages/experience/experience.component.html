@@ -14,8 +14,8 @@
           <ul class="mb-0">
             <li><a [routerLink]="['/experience']" fragment="drupal-cms">Drupal CMS</a></li>
             <li>
-              <a [routerLink]="['/experience']" fragment="docker-lando-docksal"
-                >Docker (Lando/Docksal)</a
+              <a [routerLink]="['/experience']" fragment="docker-ddev-lando-docksal"
+                >Docker (DDEV/Lando/Docksal)</a
               >
             </li>
             <li>
@@ -61,6 +61,13 @@
             <li>
               <a [routerLink]="['/experience']" fragment="llama-ai-custom-projects"
                 >Llama AI Custom Projects</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['/experience']"
+                fragment="cursor-ai-and-cursor-cli-development"
+                >Cursor AI and Cursor CLI Development</a
               >
             </li>
           </ul>
@@ -255,7 +262,7 @@
     <div class="col-lg-12">
       <div class="card">
         <div class="card-header">
-          <h2 id="docker-lando-docksal">Docker (Lando/Docksal)</h2>
+          <h2 id="docker-ddev-lando-docksal">Docker (DDEV/Lando/Docksal)</h2>
         </div>
         <div class="card-body">
           <div class="card-text">
@@ -264,9 +271,11 @@
               and standardize local development environments across complex web
               applications, primarily in Drupal ecosystems. I have extensive
               hands-on experience configuring and optimizing
-              <strong>Lando</strong> and <strong>Docksal</strong>, two popular
-              Docker-based toolsets, to support high-performance, team-aligned
-              workflows.
+              <strong>DDEV</strong>, <strong>Lando</strong>, and
+              <strong>Docksal</strong>—popular Docker-based toolsets—to support
+              high-performance, team-aligned workflows.
+              <strong>DDEV</strong> is my most used local environment and my IDE
+              environment of choice for day-to-day Drupal and PHP development.
             </p>
             <h4 id="-key-skills-experience-">
               <strong>Key Skills &amp; Experience:</strong>
@@ -283,6 +292,35 @@
                     Create reproducible environments that closely mirror
                     production infrastructure, including Nginx, PHP-FPM,
                     MariaDB/PostgreSQL, Solr, Redis, and Varnish.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <strong>DDEV (most used / IDE environment of choice):</strong>
+                </p>
+                <ul>
+                  <li>
+                    Use <strong>DDEV</strong> as my primary local stack and
+                    preferred IDE-integrated environment for active project
+                    work, debugging, and daily Drupal development.
+                  </li>
+                  <li>
+                    Configure and customize <code>.ddev/config.yaml</code> and
+                    add-ons for multisite setups, custom services (Node, Solr,
+                    Redis, Mailhog), and Xdebug-ready PHP tooling.
+                  </li>
+                  <li>
+                    Integrate DDEV workflows with <strong>Composer</strong>,
+                    <strong>Drush</strong>, and IDE debugging for fast
+                    iteration—including database imports, HTTPS hostnames, and
+                    mutually trusted certificates.
+                  </li>
+                  <li>
+                    Leverage DDEV commands and custom hooks (e.g.,
+                    <code>ddev drush</code>, <code>ddev composer</code>,
+                    <code>ddev exec</code>) to automate onboarding and keep team
+                    environments consistent.
                   </li>
                 </ul>
               </li>
@@ -2752,6 +2790,131 @@
                 Accelerated software development workflows by automating
                 repetitive coding tasks, saving developers an estimated
                 <strong>10+ hours per week</strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <h2 id="cursor-ai-and-cursor-cli-development">
+            Cursor AI and Cursor CLI Development
+          </h2>
+        </div>
+        <div class="card-body">
+          <div class="card-text">
+            <p>
+              I have a deep, practical understanding of
+              <strong>Cursor AI</strong> and the <strong>Cursor CLI</strong>,
+              and I use both technologies daily as a core part of my development
+              workflow. From agent-driven coding and multi-file refactors to
+              terminal-based cloud agents and review loops, I treat Cursor as a
+              first-class development environment—not an occasional assistant.
+            </p>
+            <h4 id="-key-areas-of-expertise-cursor-">
+              <strong>Key Areas of Expertise:</strong>
+            </h4>
+            <ul>
+              <li>
+                <p><strong>Daily Cursor AI Workflows:</strong></p>
+                <ul>
+                  <li>
+                    Use Cursor daily for feature implementation, debugging,
+                    code review, documentation, and cross-repo exploration
+                    across Drupal, Angular, DevOps, and cloud projects.
+                  </li>
+                  <li>
+                    Apply strong prompting, context selection, and iterative
+                    agent guidance to keep AI-assisted changes accurate,
+                    reviewable, and aligned with project conventions.
+                  </li>
+                  <li>
+                    Combine Composer/agent sessions with human judgment for
+                    architecture decisions, security-sensitive edits, and
+                    production-impacting changes.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Cursor CLI &amp; Cloud Agents:</strong></p>
+                <ul>
+                  <li>
+                    Deep hands-on usage of the <strong>Cursor CLI</strong> for
+                    agent-driven development, environment setup, and automated
+                    coding tasks outside the desktop IDE.
+                  </li>
+                  <li>
+                    Work with cloud agents, pull-request workflows, and
+                    artifact-driven verification (diffs, screenshots, logs) to
+                    ship and validate changes efficiently.
+                  </li>
+                  <li>
+                    Configure and troubleshoot agent environments, tooling, and
+                    repo conventions so Cursor agents can build, test, and
+                    iterate reliably.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>AI-Augmented Engineering Practices:</strong></p>
+                <ul>
+                  <li>
+                    Integrate Cursor into CI-minded workflows: branch hygiene,
+                    descriptive commits, PR summaries, and verification before
+                    merge.
+                  </li>
+                  <li>
+                    Use Cursor to accelerate migrations, container/local-env
+                    work (including DDEV), shell automation, and framework
+                    upgrades while preserving quality bars.
+                  </li>
+                  <li>
+                    Mentor teams on effective AI-assisted development—when to
+                    trust agent output, how to constrain scope, and how to
+                    review generated code critically.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h4 id="-tools-technologies-cursor-">
+              <strong>Tools &amp; Technologies:</strong>
+            </h4>
+            <ul>
+              <li>
+                <strong>Cursor IDE:</strong> Agent/Composer workflows, inline
+                edits, codebase-aware chat, multi-file refactors
+              </li>
+              <li>
+                <strong>Cursor CLI:</strong> Cloud agents, environment tooling,
+                PR-oriented autonomous development
+              </li>
+              <li>
+                <strong>Adjacent practice:</strong> Git/GitHub, Docker/DDEV,
+                Angular, Drupal, CI/CD, structured prompting and eval-minded
+                iteration
+              </li>
+            </ul>
+            <h4 id="-achievements-cursor-"><strong>Achievements:</strong></h4>
+            <ul>
+              <li>
+                Made Cursor AI and Cursor CLI a
+                <strong>daily driver</strong> for professional development,
+                significantly increasing throughput on feature work, debugging,
+                and documentation.
+              </li>
+              <li>
+                Established repeatable agent workflows that produce
+                review-ready diffs, clearer PRs, and faster turnaround without
+                sacrificing code quality.
+              </li>
+              <li>
+                Applied deep platform knowledge to combine IDE agents and CLI
+                cloud agents for end-to-end delivery—from local changes through
+                verification and pull request.
               </li>
             </ul>
           </div>
